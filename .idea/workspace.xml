@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecee879-22e7-4663-8221-87a65a8bc6e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/users.db" afterDir="false" />
-    </list>
+    <list default="true" id="2ecee879-22e7-4663-8221-87a65a8bc6e4" name="Changes" comment="" />
     <list id="a3d67fb6-9a11-4467-bb6f-05539dd9ed45" name="Updated code" comment="many functions i have uploaded" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +80,7 @@
       <workItem from="1700492539731" duration="10801000" />
       <workItem from="1700547751231" duration="32092000" />
       <workItem from="1700592943772" duration="865000" />
+      <workItem from="1700596104066" duration="66000" />
     </task>
     <servers />
   </component>
