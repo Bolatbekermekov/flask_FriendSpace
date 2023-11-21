@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ecee879-22e7-4663-8221-87a65a8bc6e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Final 2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Final 2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_secret.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/users.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/1a199948-80c7-11ee-9cd2-e0d4649f1a6e_msg777000-51387.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/24c67f0e-80c5-11ee-a30a-e0d4649f1a6e_msg777000-51387.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/8c902598-80c7-11ee-aba0-e0d4649f1a6e_msg777000-51386.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/baba.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/c89dab03-80c7-11ee-9f6a-e0d4649f1a6e_msg777000-51387.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/default.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/lala.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/myfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forgot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/password_reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/password_reset.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webforms.py" beforeDir="false" />
+    </list>
+    <list id="a3d67fb6-9a11-4467-bb6f-05539dd9ed45" name="Updated code" comment="many functions i have uploaded" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2YR9As0NNYf6hx8DwnybnDPrg3X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Bolatbek/PycharmProjects/flaskblog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Final 2" type="Python.FlaskServer">
+      <module name="Final 2" />
+      <option name="target" value="$PROJECT_DIR$/flaskblog/__init__.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ecee879-22e7-4663-8221-87a65a8bc6e4" name="Changes" comment="" />
+      <changelist id="a3d67fb6-9a11-4467-bb6f-05539dd9ed45" name="Updated code" comment="many functions i have uploaded" />
+      <created>1700477384839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700477384839</updated>
+      <workItem from="1700477386017" duration="3460000" />
+      <workItem from="1700490226211" duration="218000" />
+      <workItem from="1700490463978" duration="55000" />
+      <workItem from="1700490560100" duration="1947000" />
+      <workItem from="1700492539731" duration="10801000" />
+      <workItem from="1700547751231" duration="7293000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flask_FriendSpace$main.coverage" NAME="main Coverage Results" MODIFIED="1700502757161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_FriendSpace$Final_2.coverage" NAME="Final 2 Coverage Results" MODIFIED="1700559093351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_FriendSpace$database.coverage" NAME="database Coverage Results" MODIFIED="1700492139107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for cat,msg in get_flashed_messages(True) %}
+        <div class="alert alert- flash {{ cat }} alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close me-2" data-bs-dismiss="alert" aria-label="Close"></button>
+            {{ msg }}
+        </div>
+    {% endfor %}
+
+    <h1>Login!</h1>
+    <br>
+
+
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {{ form.username.label(class="form-label") }}
+            {{ form.username(class="form-control") }}<br>
+
+            {{ form.password.label(class='form-label') }}
+            {{ form.password(class="form-control", aria_describe_by="passwordHelpBlock") }}<br>
+
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary") }}
+                <small class="text-muted" style="margin-left: 10px ">
+                    <a href="{{ url_for('forgot_password') }}">Forgot Password?</a>
+                </small>
+            </div>
+
+            <br>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Need An Account? <a class="ml-2" href="{{ url_for('add_user') }}">Sign Up Now</a>
+            </small>
+        </div>
+    </div>
+
+
+{% endblock %}
+

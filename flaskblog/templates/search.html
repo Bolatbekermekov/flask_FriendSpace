@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<h2>You Searched For:<em>{{ searched }}</em></h2>
+<br>
+{% if posts or posts2 %}
+
+    {% if posts %}
+
+        <p>Searching using title</p>
+        {% for post in posts %}
+    <div class="shadow p-3 mb-5 bg-body rounded">
+
+        <h2><a href="{{ url_for('users_post',id=post.id) }}">{{ post.title }}</a></h2>
+        <small>By: {{ post.poster.name }}<br>
+        {{ post.date_posted }}</small><br><br>
+        {{ post.content|safe }}<br><br>
+        <a href="/posts/{{ post.id }}" class="btn btn-primary btn-sm">View Post</a>
+        <a href="/posts/edit/{{ post.id }}" class="btn btn-primary btn-sm">Edit Post</a>
+        <a href="/posts/delete/{{ post.id }}" class="btn btn-outline-danger btn-sm">Delete Post</a>
+    </div>
+        <br>
+        {% endfor %}
+    {% endif %}  <!-- Fixed the syntax error here -->
+
+    {% if posts2 %}
+        <p>Searching using content</p>
+        {% for post in posts2 %}
+    <div class="shadow p-3 mb-5 bg-body rounded">
+
+        <h2><a href="{{ url_for('users_post',id=post.id) }}">{{ post.title }}</a></h2>
+        <small>By: {{ post.poster.name }}<br>
+        {{ post.date_posted }}</small><br><br>
+        {{ post.content|safe }}<br><br>
+        <a href="/posts/{{ post.id }}" class="btn btn-primary btn-sm">View Post</a>
+        <a href="/posts/edit/{{ post.id }}" class="btn btn-primary btn-sm">Edit Post</a>
+        <a href="/posts/delete/{{ post.id }}" class="btn btn-outline-danger btn-sm">Delete Post</a>
+    </div><br>
+        {% endfor %}
+    {% endif %}  <!-- Fixed the syntax error here -->
+{% else %}
+Sorry, your search term: <strong>{{ searched }}</strong> was not found...
+{% endif %}
+{% endblock %}
