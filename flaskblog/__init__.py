@@ -2,7 +2,6 @@ from flask import Flask
 from flask_login import LoginManager
 from flask_ckeditor import CKEditor
 from flask_sqlalchemy import SQLAlchemy
-from itsdangerous import TimedSerializer as Serializer
 
 
 # from main import app, db
@@ -20,11 +19,11 @@ app = Flask(__name__)
 # Configure the SQLAlchemy database
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://u8u3vijalne2ub:p5204dbac131b3c97473bc27bf6896f8247e5d26f420e46a1202470d1178f917f@ec2-34-205-226-67.compute-1.amazonaws.com:5432/d3tapadv158a6p'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'gnmdflkbns'
 
-UPLOAD_FOLDER = 'static/images/'
+UPLOAD_FOLDER = 'flaskblog/static/images/'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 db = SQLAlchemy(app)
 

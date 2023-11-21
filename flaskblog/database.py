@@ -3,7 +3,6 @@ from flask_login import UserMixin
 from datetime import datetime
 from werkzeug.security import generate_password_hash,check_password_hash
 from flaskblog import db, login_manager, app
-from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
 #Initiialize The Database
 
