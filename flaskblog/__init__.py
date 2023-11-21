@@ -4,11 +4,6 @@ from flask_ckeditor import CKEditor
 from flask_sqlalchemy import SQLAlchemy
 from itsdangerous import TimedSerializer as Serializer
 
-import os
-from flask_mail import Mail
-from flask_bcrypt import Bcrypt
-from flask_restx import Api, Namespace
-
 
 # from main import app, db
 # # Создайте контекст приложения
@@ -23,7 +18,9 @@ from flask_restx import Api, Namespace
 app = Flask(__name__)
 
 # Configure the SQLAlchemy database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://u8u3vijalne2ub:p5204dbac131b3c97473bc27bf6896f8247e5d26f420e46a1202470d1178f917f@ec2-34-205-226-67.compute-1.amazonaws.com:5432/d3tapadv158a6p'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'gnmdflkbns'
 

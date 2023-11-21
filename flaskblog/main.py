@@ -42,12 +42,6 @@ def search():
 
         return render_template('search.html',form=form,searched=posts.searched,posts=searched_posts,posts2=searched_posts2)
 
-@app.route("/")
-def index():
-    first_name = "John"
-    stuff = "This is bold text"
-    favorite_pizza = ["Pepperoni", "Cheeze", "Mushrooms", 41]
-    return render_template('index.html', first_name=first_name, stuff=stuff, favorite_pizza=favorite_pizza)
 
 # Create  Login Page
 @app.route('/login',methods=['GET','POST'])
@@ -141,7 +135,7 @@ def dashboard():
     return render_template('dashboard.html')
 
 
-@app.route("/posts")
+@app.route("/")
 def posts():
     posts = Posts.query.order_by(Posts.date_posted)
     return render_template("posts.html",posts=posts)
@@ -167,7 +161,7 @@ def edit_post(id):
         db.session.commit()
         flash("Post has Been Updated!",category='success')
         return redirect(url_for('users_post',id=edit_post.id))
-    if current_user.id == edit_post.poster_id or current_user.id==4:
+    if current_user.id == edit_post.poster_id or current_user.id==2:
 
         form.title.data = edit_post.title
         # form.author.data = edit_post.author
@@ -189,7 +183,7 @@ def users_post(id):
 def delete_post(id):
     post_to_delete = Posts.query.get_or_404(id)
     id = current_user.id
-    if id == post_to_delete.poster_id or id == 4:
+    if id == post_to_delete.poster_id or id == 2:
 
         try:
             db.session.delete(post_to_delete)
@@ -272,12 +266,6 @@ def update(id):
     else:
         return render_template('update.html',form=form,name_to_update=name_to_update,id=id)
 
-# class PasswordForm(FlaskForm):
-#     email = StringField("What is Your Email",validators=[DataRequired()])
-#     password_hash = PasswordField("What is Your Password",validators=[DataRequired()])
-#     submit = SubmitField('Submit')
-
-
 
 @app.route('/user/add', methods=['GET', 'POST'])
 def add_user():
@@ -333,20 +321,4 @@ def page_not_founded(e):
 @app.errorhandler(500)
 def internal_server_error(e):
     return render_template("500.html"), 500
-
-
-# Create a Name page
-@app.route('/name',methods=["GET","POST"])
-def name():
-    name = None
-    form = NamerForm()
-    #Validate Form
-    if form.validate_on_submit():
-        name = form.name.data
-        form.name.data = ''
-        flash("Form Submitted Successfully")
-
-    return render_template("name.html",name=name,form=form)
-
-
 

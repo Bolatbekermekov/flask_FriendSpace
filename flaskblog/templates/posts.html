@@ -25,7 +25,7 @@
         </small><br><br>
         {{ post.content|safe }}<br><br>
         <a href="/posts/{{ post.id }}" class="btn btn-primary btn-sm">View Post</a>
-        {% if post.poster_id == current_user.id or current_user.id == 4 %}
+        {% if post.poster_id == current_user.id or current_user.id == 2 %}
             <a href="/posts/edit/{{ post.id }}" class="btn btn-primary btn-sm">Edit Post</a>
             <a href="/posts/delete/{{ post.id }}" class="btn btn-outline-danger btn-sm">Delete Post</a>
         {% endif %}

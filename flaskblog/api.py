@@ -6,22 +6,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 from flask import request
 from flaskblog import app
-from flask_jwt_extended import create_access_token
 
-# from main import posts
 
 # Create Api service
-authorizations = {
-        "Bearer Auth":{
-        'type': 'apiKey',
-        'in': 'header',
-        'name': 'Authorization'
-        }
-}
+
 api = Api(doc='/api',
           title="ContentGuard API",
           description="Our API service provides comprehensive filtering and removal of profanity, ensuring a clean and safe environment for user-generated content. Easily integrate our solution to moderate and sanitize text input, creating a more respectful online space.",
-          authorizations=authorizations,
           security="Bearer Auth"
           )
 
@@ -42,8 +33,7 @@ def verify_password(username, password):
     user = Users.query.filter_by(username=username).first()
     if user and username == "admin":
         if check_password_hash(user.password_hash, password):
-            token = jwt.encode({'username': username}, 'secret_key', algorithm='HS256')
-            return {'token': token}
+           return username
     return False
 def token_required(f):
     @wraps(f)
@@ -81,10 +71,7 @@ posts_input_model = api.model("PostsInput", {
     "slug": fields.String
 
 })
-@ns.route('/hello')
-class Hello(Resource):
-    def get(self):
-        return f"Hello World!"
+
 
 
 @ns.route('/postsapi')
