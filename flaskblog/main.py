@@ -83,6 +83,9 @@ def forgot_password():
 
     return render_template('forgot_password.html', form=form)
 
+
+
+
 # Create  Logout Page
 @app.route('/logout',methods=['GET','POST'])
 @login_required

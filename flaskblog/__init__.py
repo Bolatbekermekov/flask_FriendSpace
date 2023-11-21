@@ -11,7 +11,9 @@ from flask_sqlalchemy import SQLAlchemy
 # db.create_all()
 # $ pip uninstall werkzeug
 # $ pip install werkzeug==2.3.0
-
+# from flaskblog import app,db
+# app.app_context().push()
+# db.create_all()
 
 
 app = Flask(__name__)
