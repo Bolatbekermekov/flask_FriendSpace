@@ -110,15 +110,15 @@ def dashboard():
 
         # Check for profile pic
         if request.files['profile_pic']:
-            name_to_update.profile_pic = request.files['profile_pic']
+            name_to_update.profile_pic = request.files['profile_pic']  #Присваивает загруженный файл атрибуту профильной фотографии пользователя.
 
-            # Grab image name
+            # Grab image name Получает оригинальное имя загруженной профильной фотографии и обеспечивает его безопасность для предотвращения злонамеренного выполнения файлов.
             pic_filename = secure_filename(name_to_update.profile_pic.filename)
-            # Set UUID
+            # Set UUID Генерирует уникальный идентификатор (UUID) и добавляет его к обеспеченному оригинальному имени файла, создавая новое уникальное имя файла для профильной фотографии.
             pic_name = str(uuid.uuid1()) + '_' + pic_filename
-            # Save That Image
+            # Save That Image  Снова получает загруженный файл.
             saver = request.files['profile_pic']
-            # Change it to a string to save to db
+            # Change it to a string to save to db  Обновляет атрибут профильной фотографии пользователя новым уникальным именем файла.
             name_to_update.profile_pic = pic_name
 
             try:
